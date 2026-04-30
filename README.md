@@ -41,6 +41,14 @@ You'll see all three in the dashboard.
 - **JDK 17 or newer** installed and on PATH (or `JAVA_HOME` set). Check with `java -version`.
 - That's it. No database, no Redis, no Maven (the wrapper handles it). Just Java.
 
+### Run on Docker
+Open a terminal. You must have installed [docker](https://docker.com) in your system to run in docker for this application. 
+```
+docker build -t upi-java-app .
+docker run -d -p 8080:8080 --name upi-container upi-java-app
+```
+You can access the web app through: [http://localhost:8080/](http://localhost:8080/)
+
 ### Run on Windows
 
 Open a terminal in the project folder and run:
